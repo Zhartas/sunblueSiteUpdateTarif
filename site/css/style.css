@@ -1,0 +1,771 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    font-size: 10px;
+    font-family: verdana,sans-serif;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: #000000;
+    height: 100%;
+}
+
+#nfo{
+    position: fixed;
+    bottom: 14%;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    opacity: 0;
+    background: rgba(0,0,0,0.7);
+    border: 4px solid #dbc67e;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    transition: all ease-in-out 500ms;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5rem 1rem 1.5rem 1rem;
+}
+
+#nfo h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem .1rem;
+}
+
+#nfo p{
+    text-align: justify !important;
+    padding: 0 .5rem;
+}
+#nfo button{
+    background: black;
+    border-radius: 0px;
+    padding: .4rem 2.2rem;
+    cursor: pointer;
+    border: 2px solid #dbc67e;
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    transition: all ease 300ms;
+    color: #dbc67e;
+}
+
+#nfo button:hover{
+    background: #dbc67e;
+    color: black;
+
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+#nfoCovid{
+    position: fixed;
+    bottom: 14%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    max-width: 600px;
+    background: rgba(0,0,0,0.7);
+    border: 4px solid #dbc67e;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    transition: all ease-in-out 500ms;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5rem 1rem 1.5rem 1rem;
+}
+
+#nfoCovid h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem .1rem;
+}
+
+#nfoCovid p{
+    text-align: justify !important;
+    padding: 0 .5rem;
+}
+#nfoCovid button{
+    background: black;
+    border-radius: 0px;
+    padding: .4rem 2.2rem;
+    cursor: pointer;
+    border: 2px solid #dbc67e;
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    transition: all ease 300ms;
+    color: #dbc67e;
+}
+
+#nfoCovid button:hover{
+    background: #dbc67e;
+    color: black;
+
+}
+
+.d-none{
+    display: none;
+}
+
+.clear{
+	clear:both;
+}
+
+.content {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+}
+
+h1 {
+    color:#221A69;
+    font-weight:normal;
+    text-decoration:none;
+    display:none;
+}
+
+@font-face {
+    font-family: 'aleobold';
+    src:  url('font/aleo-bold-webfont.eot');
+    src:  url('font/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/aleo-bold-webfont.woff') format('woff'),
+        url('font/aleo-bold-webfont.ttf') format('truetype'),
+        url('font/aleo-bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleolight';
+    src:  url('font/aleo-light-webfont.eot');
+    src:  url('font/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/aleo-light-webfont.woff') format('woff'),
+        url('font/aleo-light-webfont.ttf') format('truetype'),
+        url('font/aleo-light-webfont.svg#aleolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**********************************/
+/*     Boutons de navigation      */
+/**********************************/
+#navigation {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+#navigation ul {
+    list-style-type: none;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 20px;
+}
+
+#navigation ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+}
+
+#navigation ul li:focus, #navigation ul li a:focus {
+    outline: none;
+}
+
+#contact {
+    float: left;
+    position: relative;
+    padding: 2%;  
+}
+
+#horaires{
+    float: right;
+    position: relative;
+    padding: 2%;
+}
+
+
+/**********************************/
+/*     Gestion des slides         */
+/**********************************/
+.slide {
+    margin: 0 auto;
+    position: relative;
+    width: 901px;
+    height: 627px;
+}
+
+.slide-texte {
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    line-height:130%
+}
+
+/*******************/
+/*   Contact       */
+/*******************/
+.slide-pop_up-contact {
+    background-color:#000000;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 636px;    
+}
+
+.en-tete{
+    background: url('../images/sun-blue.png') no-repeat center;
+    width: 100%;
+    height: 10%;
+    min-height: 70px;
+}
+
+#contenu-contact{
+    background-color: #0c90cd;
+    width: 100%;
+    line-height: 1;
+    height: 90%;
+}
+
+#contenu-contact h3 {
+    font-family: aleobold,sans-serif;
+    font-size: 16px;
+    line-height: 1;  
+    color: white;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.text-light{
+    color: white;
+}
+
+
+#contenu-contact h4 {
+    font-family: aleobold,sans-serif;
+    font-size: 16px;
+    line-height: 10%;
+    color: #ffffff;
+    padding: 0;
+}
+
+#contenu-contact h5 {
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    line-height:100%;
+    color: #000000;
+    padding: 0;
+}
+
+#contenu-contact i.rounded{
+   background: white;
+    padding: .5rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+#contenu-contact i.fab{
+    color: white;
+}
+
+#googlemap {
+    position:absolute;
+    bottom:-14px;
+}
+
+#googlemap iframe{
+    width: 500px; 
+    height: 300px;
+    frameborder: 0px;
+    border: 0;
+}
+
+#contenu-contact{
+    padding: 2% 0 0 0;
+    line-height: 2;
+}
+
+#contenu-contact .title-form {
+   font-size: .8rem;
+   font-weight: 500;
+   line-height: 5;
+   margin: 0;
+   padding: 0 0 0 20px;
+}
+
+#contenu-contact form hr {
+    border-bottom: 1px solid #2f7b9e;
+    border-top: none;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contenu-contact form input[type="text"], #contenu-contact form input[type="email"], #contenu-contact form textarea {
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: verdana,sans-serif;
+    font-size: 12px;
+}
+
+#contenu-contact form textarea {
+    height: 70px;
+}
+
+#contenu-contact form input.smallinput {
+    width: 49.5%;
+}
+
+#contenu-contact form input.smallinput[type="email"] {
+    margin-right: 1%;
+}
+
+#contenu-contact form input[type="submit"] {
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    width: 40px;
+    background-color: #064562;
+    position: absolute;
+    bottom: 0px;
+    color: #FFF;
+    right: 5%;
+    cursor: pointer;
+}
+
+#contenu-contact form h3 {
+    padding-top: 3%;
+}
+
+/*******************/
+/*   Horaires      */
+/*******************/
+.slide-pop_up-horaires {
+    background-color:#000000;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 480px;    
+}
+
+#contenu-horaires{
+    background-color: #0c90cd;
+    width: 100%;
+    height: 90%;
+}
+
+#contenu-horaires h3 {
+    text-align: center;
+    font-family: aleobold,sans-serif;
+    font-size: 20px;
+    line-height:10%;
+    color: #000000;
+    padding: 6% 0% 5% 0%;
+    margin-top: 0;
+}
+
+#contenu-horaires h4, a {
+    text-align: center;
+    font-family: aleobold,sans-serif;
+    font-size: 16px;
+    line-height:10%;
+    color: #ffffff;
+}
+
+#contenu-horaires h5 {
+    text-align: center;
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    line-height:10%;
+    color: #ffffff;
+    margin-bottom: 36px;
+}
+
+#contenu-horaires p {
+    text-align: center;
+    font-family: aleobold,sans-serif;
+	font-size:16px;
+}
+
+
+/*******************/
+/*   Tarifs        */
+/*******************/
+.slide-pop_up-tarifs {
+    background-color:#000000;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 700px;    
+}
+
+#contenu-tarifs{
+    background-color: #0c90cd;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+#contenu-tarifs h3 {
+    text-align: center;
+    font-family: aleobold,sans-serif;
+    font-size: 20px;
+    line-height:10%;
+    color: #FFF;
+    padding: 6% 0% 5% 0%;
+}
+
+#contenu-tarifs h4 {
+    text-align: left;
+    font-family: aleobold,sans-serif;
+    font-size: 18px;
+    line-height:10%;
+    color: #000000;
+    padding-left: 5%;
+}
+
+#contenu-tarifs p {
+    padding:10px 30px;
+    text-align: justify;
+}
+
+#contenu-tarifs em {
+    font-size: 10px;
+	color:#FFF;
+}
+
+#contenu-tarifs ul {
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.list-left {
+    float: left;
+    width: 40%;
+}
+
+.list-right {
+    float: right;
+    width: 40%
+}
+
+/********************************************/
+/*   Messages : Fauteuils, jouets, miroir   */
+/********************************************/
+.message {
+    background-color:#000000;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 5px solid #ffffff;    
+}
+
+.message p {
+    text-align: center;
+    font-family: aleobold,sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*******************************/
+/*  Fauteil                    */
+/*******************************/
+.slide-pop_up-fauteuil {
+    background-image:url(../images/pop_ups/fauteil.png);
+    border: 5px solid #ffffff;
+    width: 623px;
+    height: 480px;
+}
+
+.slide-pop_up-fauteuil p {
+    padding: 10% 10% 10% 10%;
+}
+
+/*******************************/
+/*  Jouets                     */
+/*******************************/
+.slide-pop_up-jouets {
+    background-image:url(../images/pop_ups/jouets.png);
+    border: 5px solid #ffffff;
+    width: 500px;
+    height: 417px;
+}
+
+.slide-pop_up-jouets p {
+    padding: 15% 10% 10% 10%;
+}
+
+/*******************************/
+/*  Jouets                     */
+/*******************************/
+.slide-pop_up-miroir {
+    background-image:url(../images/pop_ups/miroir.png);
+    border: 5px solid #ffffff;
+    width: 600px;
+    height: 453px;
+
+}
+
+.slide-pop_up-miroir p {
+    padding: 60% 10% 10% 10%;
+    color: #000000 !important;
+}
+
+/*******************************/
+/*  Porte 1 -  Power of Chi    */
+/*******************************/
+.slide-pop_up1 {
+    background-image:url(../images/pop_ups/pop_up2.jpg);
+    border: 5px solid #0c90cd;
+}
+
+#texte-pop_up1{
+    padding: 35% 5% 0% 60%;  
+    color: #ffffff;
+}
+
+#texte-pop_up1 strong{
+    font-family: aleobold,sans-serif;
+    color: #0c90cd;
+}
+
+/******************************/
+/*  Porte 2 -  avant garde    */
+/******************************/
+.slide-pop_up2 {
+    background-image:url(../images/pop_ups/pop_up2.jpg);
+    /*border: 5px solid #e2206c;*/
+	border: 5px solid #f7a707;
+}
+
+#texte-pop_up2{
+    padding: 35% 5% 0% 60%;  
+    color: #ffffff;
+}
+
+#texte-pop_up2 strong{
+    font-family: aleobold,sans-serif;
+    /*color: #e2206c;*/
+	color: #f7a707;
+}
+
+/*******************************/
+/*  Porte 3 - Triumph          */
+/*******************************/
+.slide-pop_up3 {
+    background-image:url(../images/pop_ups/pop_up3.jpg);
+    border: 5px solid #b63131;
+}
+
+#texte-pop_up3{
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up3 strong{
+    font-family: aleobold,sans-serif;
+    color: #b63131;
+}
+
+/*******************************/
+/*  Porte 4/5 - Lotus          */
+/*******************************/
+.slide-pop_up4 {
+    background-image:url(../images/pop_ups/pop_up4-5.jpg);
+    border: 5px solid #37827a;
+}
+
+.slide-pop_up5 {
+    background-image:url(../images/pop_ups/pop_up5.jpg);
+    border: 5px solid #37827a;
+}
+
+#texte-pop_up4, #texte-pop_up5 {
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up4 strong, #texte-pop_up5 strong{
+    font-family: aleobold,sans-serif;
+    color: #37827a;
+}
+
+
+/*******************************/
+/*  Porte 6 - Cayenne          */
+/*******************************/
+.slide-pop_up6 {
+    background-image:url(../images/pop_ups/pop_up6.jpg);
+    border: 5px solid #c4a435;
+}
+
+#texte-pop_up6{
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up6 strong{
+    font-family: aleobold,sans-serif;
+    color: #ffc809;
+}
+
+/*******************************/
+/*  Porte 7 - TK8000           */
+/*******************************/
+.slide-pop_up7 {
+    background-image:url(../images/pop_ups/pop_up7.jpg);
+    border: 5px solid #cd0c11;
+}
+
+#texte-pop_up7{
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up7 strong{
+    font-family: aleobold,sans-serif;
+    color: #cd0c11;
+}
+
+/*******************************/
+/*  Porte 8 - sclass           */
+/*******************************/
+.slide-pop_up8 {
+    background-image:url(../images/pop_ups/pop_up8.jpg);
+    border: 5px solid #075366;
+}
+
+#texte-pop_up8{
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up8 strong{
+    font-family: aleobold,sans-serif;
+    color: #075366;
+}
+
+/*******************************/
+/*  Porte 9 - iBed             */
+/*******************************/
+.slide-pop_up9 {
+    background-image:url(../images/pop_ups/pop_up9.jpg);
+    border: 5px solid #075366;
+}
+
+#texte-pop_up9{
+    padding: 35% 5% 0% 60%;
+    color: #ffffff;
+}
+
+#texte-pop_up9 strong{
+    font-family: aleobold,sans-serif;
+    color: #075366;
+}
+
+/*******************************/
+/*  Mentions Légals            */
+/*******************************/
+.slide-pop_up-mentions {
+    background-color:#0c90cd;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 630px;
+    border: 5px solid #ffffff;  
+    font-family: aleolight,sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 1% 1% 1% 1%;
+	overflow-x:auto;
+}
+
+.slide-pop_up-mentions h2{
+    text-align: center;
+}
+
+.slide-pop_up-mentions h3{
+    color: #000000;
+}
+
+.slide-pop_up-mentions a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*******************************/
+/*          Footer             */
+/*******************************/
+#footer {
+    width: 100%;
+    height: 40px;
+    display: block;
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin:0 auto;
+    text-align:center;
+    padding:5px 0;
+    position: absolute;
+    bottom: 20px;
+}
+
+#footer h3 {
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+#footer ul {
+    margin: 10px 0px 0px 0px;
+    list-style-type:none;
+    position: relative;
+    z-index: 2;
+}
+
+#footer li {
+    display:inline;
+}
+#footer a {
+    text-decoration:none;
+}
+
+.slide-texte div {
+    border-top: 1px solid rgba(123, 123, 123, 0.15);
+    margin-top: 18px;
+    padding-top: 18px;
+}
+
+.slide-texte .list-left, .slide-texte .list-right {
+    display: inline-block;
+    padding-left: 17px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.slide-texte {
+    text-align: justify;
+}

@@ -1,0 +1,919 @@
+body {
+	font-size: 10px;
+	font-family: verdana,sans-serif;
+	padding: 0px;
+	margin: 0px auto;
+    background-color: #000000;
+}
+
+#nfo{
+    position: fixed;
+    bottom: 14%;
+    left: 0;
+    right: 0;
+    transition: all ease-in-out 500ms;
+    bottom: 0;
+    max-width: 600px;
+    background: rgba(0,0,0,0.9);
+    z-index: 99999;
+    border: 4px solid #dbc67e;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    margin: 0 auto;
+
+    padding: .5rem 1rem 1.5rem 1rem;
+}
+
+#nfo h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem .1rem;
+}
+
+#nfo p{
+
+    padding: 0 .2rem;
+}
+#nfo button{
+    background: black;
+    border-radius: 0px;
+    padding: .4rem 2.2rem;
+    cursor: pointer;
+    border: 2px solid #dbc67e;
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    transition: all ease 300ms;
+    color: #dbc67e;
+}
+
+#nfo button:hover{
+    background: #dbc67e;
+    color: black;
+
+}
+.content {
+	width: 100%;
+	background-color: #000000;
+}
+
+h1 {
+        font-family: aleobold,sans-serif;
+        font-size: 20px;
+        color: #FFF;
+        font-weight: normal;
+        text-decoration: none;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        margin: 0;
+        line-height: 30px;
+        text-shadow: 2px 2px 2px #000000;
+}
+
+@font-face {
+  font-family: 'aleobold';
+  src:  url('font/aleo-bold-webfont.eot');
+  src:  url('font/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/aleo-bold-webfont.woff') format('woff'),
+        url('font/aleo-bold-webfont.ttf') format('truetype'),
+        url('font/aleo-bold-webfont.svg#aleobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'aleolight';
+  src:  url('font/aleo-light-webfont.eot');
+  src:  url('font/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/aleo-light-webfont.woff') format('woff'),
+        url('font/aleo-light-webfont.ttf') format('truetype'),
+        url('font/aleo-light-webfont.svg#aleolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.etiquettes p{
+    font-family: aleolight,sans-serif;
+    font-size: 16px;
+    line-height:10%;
+    color: #000000;
+    text-decoration: none;
+    background-color:#FFFFFF;
+    padding:0.5em;
+    display : inline ;
+}
+
+.etiquettes img{
+    padding: 16px 0px 0px 0px;
+}
+
+/**********************************/
+/*     Boutons de navigation      */
+/**********************************/
+#bouton-contact {
+  width: 68px;
+  position: absolute;
+  left:2%;
+  top: 2%;
+}
+
+
+#bouton-horaires {
+  right: 2%;
+  top: 2%;
+  width: 122px;
+  position: absolute;
+}
+
+
+#bouton-left {
+  width: 68px;
+  position: absolute;
+  left:2%;
+  top: 300px;
+}
+
+
+#bouton-right {
+  right: 2%;
+  top: 300px;
+  width: 68px;
+  position: absolute;
+}
+
+
+/**********************************/
+/*     Gestion des slides         */
+/**********************************/
+.slide {
+  margin: 0 auto;
+  position: relative;
+  width: calc(100% - 10px);
+  height: auto;
+}
+
+.slide-texte {
+  font-family: aleolight,sans-serif;
+  font-size: 16px;
+  line-height:130%;
+  text-align: justify;
+}
+
+/*******************/
+/*   Contact       */
+/*******************/
+.slide-pop_up-contact {
+  background-color:#000000;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 700px;    
+}
+
+.en-tete{
+  background: url('../images/sun-blue.png') no-repeat center;
+  width: 100%;
+  height: 10%;
+}
+
+#contenu-contact{
+  background-color: #0c90cd;
+  width: 100%;
+  height: 90%;
+}
+
+#contenu-contact h3 {
+  font-family: aleobold,sans-serif;
+  font-size: 13px;
+  line-height:10%;  
+  color: #000000;
+  padding: 30% 10% 0% 5%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#contenu-contact h4 {
+  font-family: aleobold,sans-serif;
+  font-size: 13px;
+  line-height:10%;
+  color: #ffffff;
+  padding: 0% 10% 0% 5%;
+  text-align: center;
+}
+
+#contenu-contact h5 {
+  font-family: aleolight,sans-serif;
+  font-size: 13px;
+  line-height:130%;
+  color: #000000;
+  padding: 0% 10% 0% 5%;
+  text-align: center;
+}
+
+#googlemap {
+  position:absolute;
+  bottom:0px;
+}
+
+#googlemap iframe{
+    width: 100%; 
+    height: 300px;
+    frameborder: 0px;
+    border: 0;
+}
+
+/*******************/
+/*   Horaires      */
+/*******************/
+.slide-pop_up-horaires {
+  background-color:#000000;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 480px;    
+}
+
+#contenu-horaires{
+  background-color: #0c90cd;
+  width: 100%;
+  height: 90%;
+}
+
+#contenu-horaires h3 {
+  text-align: center;
+  font-family: aleobold,sans-serif;
+  font-size: 18px;
+  line-height:10%;
+  color: #000000;
+  padding: 6% 0% 5% 0%;
+}
+
+#contenu-horaires h4, a {
+  text-align: center;
+  font-family: aleobold,sans-serif;
+  font-size: 13px;
+  line-height:10%;
+  color: #ffffff;
+}
+
+#contenu-horaires h5 {
+  text-align: center;
+  font-family: aleolight,sans-serif;
+  font-size: 13px;
+  line-height:10%;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+#contenu-horaires p {
+  text-align: center;
+  font-family: aleobold,sans-serif;
+  font-size:13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+
+/*******************/
+/*   Tarifs        */
+/*******************/
+.slide-pop_up-tarifs {
+  background-color:#000000;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 480px;    
+}
+
+#contenu-tarifs{
+  background-color: #0c90cd;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
+
+#contenu-tarifs h3 {
+  text-align: center;
+  font-family: aleobold,sans-serif;
+  font-size: 18px;
+  line-height:10%;
+  color: #3c3c3c;
+  padding: 6% 0% 5% 0%;
+}
+
+#contenu-tarifs h4 {
+  text-align: left;
+  font-family: aleobold,sans-serif;
+  font-size: 13px;
+  line-height:10%;
+  color: #000000;
+  padding-left: 5%
+}
+
+#contenu-tarifs p {
+    padding:10px 30px;
+    text-align: justify;
+}
+
+#contenu-tarifs em {
+    font-size: 10px;
+    color: #0c90cd;
+    text-align: center;
+}
+
+#contenu-tarifs ul {
+  font-family: aleolight,sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.list-left {
+  float: left;
+  width: 40%;
+}
+
+.list-right {
+  float: right;
+  width: 40%
+}
+
+/*******************************/
+/*  Porte 1 -  Power of Chi    */
+/*******************************/
+.slide-pop_up1 {
+  background-image:url(../images/pop_ups/pop_up2.jpg);
+  border: 5px solid #0c90cd;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#texte-pop_up1{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up1 strong{
+  font-family: aleobold,sans-serif;
+  color: #0c90cd;
+}
+
+/******************************/
+/*  Porte 2 -  avant garde    */
+/******************************/
+.slide-pop_up2 {
+  background-image:url(../images/pop_ups/pop_up2.jpg);
+  /*border: 5px solid #e2206c;*/
+  border: 5px solid #f7a707;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up2{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up2 strong{
+  font-family: aleobold,sans-serif;
+  /*color: #e2206c;*/
+  color: #f7a707;
+}
+
+/*******************************/
+/*  Porte 3 - Triumph          */
+/*******************************/
+.slide-pop_up3 {
+  background-image:url(../images/pop_ups/pop_up3.jpg);
+  border: 5px solid #b63131;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up3{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up3 strong{
+  font-family: aleobold,sans-serif;
+  color: #b63131;
+}
+
+/*******************************/
+/*  Porte 4/5 - Lotus          */
+/*******************************/
+.slide-pop_up4 {
+    background-image:url(../images/pop_ups/pop_up4-5.jpg);
+    border: 5px solid #37827a;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slide-pop_up5 {
+    background-image:url(../images/pop_ups/pop_up4-5.jpg);
+    border: 5px solid #37827a;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up4, #texte-pop_up5 {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up4 strong, #texte-pop_up5 strong{
+  font-family: aleobold,sans-serif;
+  color: #37827a;
+}
+
+
+/*******************************/
+/*  Porte 6 - Cayenne          */
+/*******************************/
+.slide-pop_up6 {
+  background-image:url(../images/pop_ups/pop_up6.jpg);
+  border: 5px solid #c4a435;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up6{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up6 strong{
+  font-family: aleobold,sans-serif;
+  color: #ffc809;
+}
+
+/*******************************/
+/*  Porte 7 - TK8000           */
+/*******************************/
+.slide-pop_up7 {
+  background-image:url(../images/pop_ups/pop_up7.jpg);
+  border: 5px solid #cd0c11;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up7{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up7 strong{
+  font-family: aleobold,sans-serif;
+  color: #cd0c11;
+}
+
+/*******************************/
+/*  Porte 8 - sclass           */
+/*******************************/
+.slide-pop_up8 {
+  background-image:url(../images/pop_ups/pop_up8.jpg);
+  border: 5px solid #075366;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up8{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up8 strong{
+  font-family: aleobold,sans-serif;
+  color: #075366;
+}
+
+/*******************************/
+/*  Porte 9 - iBed             */
+/*******************************/
+.slide-pop_up9 {
+  background-image:url(../images/pop_ups/pop_up9.jpg);
+  border: 5px solid #075366;
+      background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texte-pop_up9{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    display: table;
+    padding-top: 72%;
+}
+
+#texte-pop_up9 strong{
+  font-family: aleobold,sans-serif;
+  color: #075366;
+}
+
+.slide-texte p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/********************************************/
+/*   Messages : Fauteuils, jouets, miroir   */
+/********************************************/
+.message {
+  background-color:#000000;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 200px;
+  border: 5px solid #ffffff;    
+}
+
+.message p {
+  text-align: center;
+  font-family: aleobold,sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/*******************************/
+/*  orientation                    */
+/*******************************/
+.slide-pop_up-orientation {
+    border: 5px solid #ffffff;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-family: aleobold,sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5% 0% 0% 0%;
+  
+}
+
+/*******************************/
+/*  Fauteil                    */
+/*******************************/
+.slide-pop_up-fauteuil {
+  background-image:url(../images/pop_ups/fauteil.png);
+  border: 5px solid #ffffff;
+  width: 623px;
+  height: 480px;
+}
+
+.slide-pop_up-fauteuil p {
+    padding: 10% 10% 10% 10%;
+}
+
+/*******************************/
+/*  Jouets                     */
+/*******************************/
+.slide-pop_up-jouets {
+  background-image:url(../images/pop_ups/jouets.png);
+  border: 5px solid #ffffff;
+  width: 500px;
+  height: 417px;
+}
+
+.slide-pop_up-jouets p {
+    padding: 35% 10% 10% 10%;
+}
+
+/*******************************/
+/*  Jouets                     */
+/*******************************/
+.slide-pop_up-miroir {
+  background-image:url(../images/pop_ups/miroir.png);
+  border: 5px solid #ffffff;
+  width: 600px;
+  height: 453px;
+  
+}
+
+.slide-pop_up-miroir p {
+    padding: 50% 10% 10% 10%;
+    color: #000000 !important;
+}
+
+/*******************************/
+/*  Mentions Légals            */
+/*******************************/
+.slide-pop_up-mentions {
+  background-color:#0c90cd;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 630px;
+  border: 5px solid #ffffff;  
+  font-family: aleolight,sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 1% 1% 1% 1%;
+	overflow-x:auto;
+
+}
+
+.slide-pop_up-mentions h2{
+  text-align: center;
+}
+
+.slide-pop_up-mentions h3{
+  color: #000000;
+}
+
+.slide-pop_up-mentions a{
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/*******************************/
+/*          Footer             */
+/*******************************/
+#footer {
+  width: 100%;
+  height: 40px;
+  display: block;
+  background-color: #000000;
+  font-family: aleolight,sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin:0 auto;
+  text-align:center;
+  padding:5px 0;
+}
+
+#footer h3 {
+  float:left;
+  padding:0;
+  margin:0;
+}
+
+#footer ul {
+    margin: 10px 0px 0px 0px;
+    list-style-type:none;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+
+#footer li {
+  display:inline;
+ }
+ #footer a {
+  text-decoration:none;
+ }
+
+ #contenu-horaires {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: #0c90cd;
+    padding-top: 10px;
+ }
+ 
+ #contenu-horaires h3,  #contenu-tarifs h3 {
+    padding-top: 25px;
+    padding-bottom: 35px;
+ }
+ 
+ #contenu-tarifs h3 {
+    padding-bottom: 18px;
+ }
+ 
+ #main-title {
+    background-image: url(../images/solarium-bk2.png);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+ }
+ 
+ #contenu-tarifs {
+    background-color: #ffffff;
+    margin-top: -20px;
+}
+
+#contenu-tarifs h4 {
+    color: #0c90cd;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#contenu-tarifs ul {
+    color: #6c6c6c;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+ 
+ .hamburger {
+    position: absolute;
+    top: 5px;
+    z-index: 9999;
+ }
+ 
+#googlemap {
+    position: inherit;
+    margin-top: 30px;
+}
+
+#contenu-contact h3 {
+    margin-top: 0;
+}
+
+#carousel {
+    width: 100%;
+}
+
+#carousel h3 {
+    color: white;
+    font-size: 50px;
+}
+
+#carousel .mfp-hide {
+    display: initial !important;
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+#carousel .slick-prev {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    font-size: 0;
+    width: 0;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+#carousel .slick-prev:before {
+    content: "";
+    background-image: url(../images/nav-left.png);
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    z-index: 99999;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    
+}
+
+#carousel .slick-next {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    font-size: 0;
+    width: 0;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+#carousel .slick-next:after {
+    content: "";
+    background-image: url(../images/nav-right.png);
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    z-index: 99999;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.ui-loader {
+    display: none;
+}
+
+#toplogo {
+    text-align: right;
+}
+
+#toplogo img {
+    padding: 6px;
+    width: 90px;
+}
+
+.fat-nav li, .fat-nav li a {
+    height: 40px;
+}
+
+.fat-nav li, .fat-nav li a {
+    text-decoration: none;
+}
+
+#contenu-contact form > div {
+    padding: 0% 5% 0% 5%;
+    position: relative;
+    font-size: 0;
+}
+
+#contenu-contact form hr {
+    border-bottom: 1px solid #2f7b9e;
+    border-top: none;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contenu-contact form input[type="text"], #contenu-contact form input[type="email"], #contenu-contact form textarea {
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: verdana,sans-serif;
+    font-size: 12px;
+}
+
+#contenu-contact form textarea {
+    height: 90px !important;
+}
+
+#contenu-contact form input[type="submit"] {
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    width: 40px;
+    background-color: #064562;
+    position: absolute;
+    bottom: 0px;
+    color: #FFF;
+    right: 5%;
+    cursor: pointer;
+}
+
+#contenu-contact form h3 {
+    padding-top: 3%;
+}
+
+.slide-texte .list-left, .slide-texte .list-right {
+    display: inline-block;
+    padding-left: 17px;
+    line-height: 22px;
+}
