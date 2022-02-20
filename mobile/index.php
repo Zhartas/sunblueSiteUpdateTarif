@@ -15,18 +15,14 @@
     <link href='mobile/css/photonav.css' rel='stylesheet' type='text/css'/>
 
     <script src="mobile/js/jquery-1.3.2.min.js" type="text/javascript"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117539412-1"></script>
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK1EQ5BH8J"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-117539412-1');
+      gtag('config', 'G-TK1EQ5BH8J');
     </script>
 
 
